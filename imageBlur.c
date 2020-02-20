@@ -212,7 +212,8 @@ void blur_image()
   }
   return;
 #endif
-#else  
+  
+#ifdef INTERLEAVE 
   // Create threads and call row interleaving function
   // passing each thread its rank	
   for(long p = 0; p < num_procs; p++){
