@@ -224,3 +224,4 @@ void blur_image()
   }
   return;
 #endif
+}
