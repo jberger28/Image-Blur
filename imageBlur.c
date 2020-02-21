@@ -26,7 +26,7 @@ void *row_block(void *rank){
   // Build a 2 dimensional array containing every possible weight
   for (i = r-1; i > -r; i--)
     for (j = r-1; j > -r; j--){
-      // for positive values of w and y, update table
+      // for positive values of i and j, update table
       if (i >= 0 && j >= 0)
 	weight[i][j] = (r - i) * (r - j);	    
 
@@ -114,7 +114,7 @@ void *row_interleave(void *rank){
   // Build a 2 dimensional array containing every possible weight
   for (i = r-1; i > -r; i--)
     for (j = r-1; j > -r; j--){
-      // for positive values of w and y, update table
+      // for positive values of i and j, update table
       if (i >= 0 && j >= 0)
 	weight[i][j] = (r - i) * (r - j);	    
 
