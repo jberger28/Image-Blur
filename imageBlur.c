@@ -1,5 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include "jpeglib.h"
+#include "cs338jpeg.h"
+
+
 /* Provide two different multi-threaded approaches for blurring
-/ a JPEG image.
+/ a JPEG image by making each pixel a weighed average of its neighbors
 */
 
 int r; // blur radius
