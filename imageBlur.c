@@ -6,7 +6,9 @@
 
 
 /* Provide two different multi-threaded approaches for blurring
-/ a JPEG image by making each pixel a weighed average of its neighbors
+/ a JPEG image by making each pixel a weighed average of its neighbors,
+/ part of a larger project which provided a framework for reading from
+/ and writing to JPEGS.
 */
 
 int r; // blur radius
