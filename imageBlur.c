@@ -187,7 +187,7 @@ void *row_interleave(void *rank){
 
 /* 
 Blur Image by making each pixel a weighted average of 
-itself and its neightbor, providing implementations for 2 
+itself and its neighbors, providing implementations for 2 
 different parallel appraoches
 */
 void blur_image()
