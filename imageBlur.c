@@ -69,7 +69,7 @@ void *row_block(void *rank){
       // code for pixels within r pixels of the edge of the image
       else{
 	// Change start and end for summation, so that we only
-	// are summing over pictures actually in the image
+	// are summing over pixels actually in the image
 	while (i + istart < 0)
 	  istart ++;
 	while (i + ifinish >= from->image_height)
@@ -152,7 +152,7 @@ void *row_interleave(void *rank){
       // code for pixels within r pixels of the edge of the image
       else{
 	// Change start and end for summation, so that we only
-	// are summing over pictures actually in the image
+	// are summing over pixels actually in the image
 	while (i + istart < 0)
 	  istart ++;
 	while (i + ifinish >= from->image_height)
