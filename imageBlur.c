@@ -203,14 +203,12 @@ void blur_image()
   else
     r = percent_blur * from->image_width;
 
-
   pthread_t ids[num_procs]; // the number of threads
-
 
   // ONLY ONE OF THE FOLLOWING SEGMENTS OF CODE WILL BE EXECUTED
 #ifdef BLOCK	
   // Create threads and call row blocking function,
-  // passing each thread its rank
+  // passing each thread its rank  
   for(long p = 0; p < num_procs; p++){
     pthread_create(&ids[p], NULL, row_block, (void*)p);
   }
